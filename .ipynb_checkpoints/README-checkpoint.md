@@ -24,10 +24,10 @@ Test Accuracy: `99.25%`
 
 
 #### Graphs - Loss/Accuracy
-!["batchnorm loss/acc"](./../bnorm_graph.png)
+!["batchnorm loss/acc"](./bnorm_graph.png)
 
 #### Misclassified Samples
-!["batchnorm mis"](./../bnorm_mis.png)
+!["batchnorm mis"](./bnorm_mis.png)
 
 ### 2. Group Norm
 
@@ -37,10 +37,10 @@ Validation Accuracy: `98.340%`
 Test Accuracy = `98.99%`  
 
 #### Graphs - Loss/Accuracy
-!["batchnorm loss/acc"](./../gnorm_graph.png)
+!["batchnorm loss/acc"](./gnorm_graph.png)
 
 #### Misclassified Samples
-!["batchnorm mis"](./../gnorm_mis.png)
+!["batchnorm mis"](./gnorm_mis.png)
 
 
 ### 3. Layer Norm
@@ -51,15 +51,15 @@ Validation Accuracy: `97.915%`
 Test Accuracy = `98.27%`  
 
 #### Graphs - Loss/Accuracy
-!["batchnorm loss/acc"](./../lnorm_graph.png)
+!["batchnorm loss/acc"](./lnorm_graph.png)
 
 #### Misclassified Samples
-!["batchnorm mis"](./../lnorm_mis.png)
+!["batchnorm mis"](./lnorm_mis.png)
 
 
 
 ### Overall Result
 
-The performance ranking between the three norms are: 
+The performance ranking (based on accuracy) between the three norms are: 
 
 `batch-norm` > `group-norm` > `layer-norm`
