@@ -2,7 +2,7 @@
 
 ## Norm Experiments
 
-The folder contains a runner file called `main.py`. Helper files are present in `./utils/`. Helper files are: 
+The folder contains a runner file called `main_nb.ipynb`. Helper files are present in `./utils/`. Helper files are: 
 
 1. `load_data.py`
     - Contains dataset and sampler functions.
@@ -14,6 +14,7 @@ The folder contains a runner file called `main.py`. Helper files are present in 
     - Test loop for test set.
 
 
+The `main.py`/`main_nb.ipynb` imports from the `utils/` directory. It initializes the model, optimizer, dataloader, loss, scheduler, train loop, and test loop.
 
 ### 1. BatchNorm
 
@@ -24,10 +25,10 @@ Test Accuracy: `99.25%`
 
 
 #### Graphs - Loss/Accuracy
-!["batchnorm loss/acc"](./bnorm_graph.png)
+!["bnorm loss/acc"](./images/bnorm_graph.png)
 
 #### Misclassified Samples
-!["batchnorm mis"](./bnorm_mis.png)
+!["bnorm mis"](./images/bnorm_mis.png)
 
 ### 2. Group Norm
 
@@ -37,10 +38,10 @@ Validation Accuracy: `98.340%`
 Test Accuracy = `98.99%`  
 
 #### Graphs - Loss/Accuracy
-!["batchnorm loss/acc"](./gnorm_graph.png)
+!["gnorm loss/acc"](./images/gnorm_graph.png)
 
 #### Misclassified Samples
-!["batchnorm mis"](./gnorm_mis.png)
+!["gnorm mis"](./images/gnorm_mis.png)
 
 
 ### 3. Layer Norm
@@ -51,10 +52,10 @@ Validation Accuracy: `97.915%`
 Test Accuracy = `98.27%`  
 
 #### Graphs - Loss/Accuracy
-!["batchnorm loss/acc"](./lnorm_graph.png)
+!["lhnorm loss/acc"](./images/lnorm_graph.png)
 
 #### Misclassified Samples
-!["batchnorm mis"](./lnorm_mis.png)
+!["lhnorm mis"](./images/lnorm_mis.png)
 
 
 
@@ -63,3 +64,13 @@ Test Accuracy = `98.27%`
 The performance ranking (based on accuracy) between the three norms are: 
 
 `batch-norm` > `group-norm` > `layer-norm`
+
+
+
+
+
+## Norm Calculation
+
+The norm-calculation excel sheet is `norm_calc.xlsx`.
+!["norm calc mis"](./images/norm_calc.png)
+
